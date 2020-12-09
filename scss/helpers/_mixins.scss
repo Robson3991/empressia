@@ -1,0 +1,8 @@
+@mixin rwd($point, $mobileFirst: false) {
+    @if $mobileFirst {
+        @media (min-width: #{$point + 1}px) { @content; }
+    }
+    @else {
+        @media (max-width: #{$point}px) { @content; }
+    }
+}

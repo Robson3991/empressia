@@ -1,0 +1,24 @@
+// COLORS
+$c-white:     #FFF;
+$c-black:     #000;
+$c-dark:      #0E0E0E;
+$c-primary:   #4432FF;
+$c-secondary: #14CAFF; 
+$c-light:     #F4F7F9;
+$c-green:     #53C22C;
+$c-yellow:    #E7C029;
+$c-red:       #ED3947;
+
+// FONTS
+$f-main: 'Comfortaa', cursive;
+$f-headers: 'all-round-gothic', sans-serif;
+
+// HELPERS
+$tr: .3s; // transition
+
+// BREAKPOINTS
+$laptop: 1260;
+$ipad: 1024;
+$tablet: 768;
+$large-phone: 599;
+$phone: 420;
