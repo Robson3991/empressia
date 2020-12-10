@@ -3,6 +3,7 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 101px;
+    margin-bottom: 160px;
 
     &__content {
         max-width: 500px;
@@ -29,7 +30,7 @@
     }
 
     &__image {
-        box-shadow: 24px 32px 56px 0 rgba(39, 33, 99, .12);
+        box-shadow: 24px 32px 56px 0 rgba($c-darkblue, .12);
 
         &--small {
             position: absolute;

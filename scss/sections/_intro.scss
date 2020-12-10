@@ -1,0 +1,66 @@
+.intro {
+    position: relative;
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        max-width: 944px;
+        transform: translate(-50%, calc(-50% + 32px));
+        text-align: center;
+
+        &:before {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 446px;
+            height: 446px;
+            transform: translate(-50%, -50%);
+            content: '';
+            background: url('./src/img/illustration-segment.png');
+            pointer-events: none;
+        }
+    }
+
+    &__heading {
+        margin-bottom: 24px;
+    }
+
+    &__paragraph {
+        margin: 0 auto;
+        max-width: 768px;
+    }
+
+    &__links {
+        position: absolute;
+        left: 50%;
+        bottom: calc(100% + 80px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: translateX(-50%);
+    }
+
+    &__link {
+        display: block;
+        width: 80px;
+        height: 80px;
+        color: transparent;
+        margin: 0 16px;
+        box-shadow: 11px 15px 26px 0 rgba($c-darkblue, .12);
+        transition: transform $tr;
+        img {
+            width: 100%;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

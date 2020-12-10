@@ -4,4 +4,8 @@
     max-width: #{1168 + 60}px;
     padding: 0 30px;
     margin: 0 auto;
+
+    &--wide {
+        max-width: 1428px;
+    }
 }
