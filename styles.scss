@@ -4,9 +4,17 @@
 @import './scss/helpers/mixins';
 
 // ICOMOON
-@import './src/icomoon/icomoon.scss';
+@import './src/icomoon/icomoon';
 
 // BASE
 @import './scss/base/reset';
 @import './scss/base/global';
 @import './scss/base/typography';
+
+// LAYOUT
+@import './scss/layout/wrapper';
+@import './scss/layout/header';
+
+// COMPONENTS
+@import './scss/components/menu';
+@import './scss/components/button';

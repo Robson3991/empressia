@@ -1,0 +1,40 @@
+.button {
+    position: relative;
+    padding: 19px 24px;
+    background: $c-primary;
+    border: 0;
+    border-radius: $radius;
+    color: $c-white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: $f-main;
+    cursor: pointer;
+    transition: background-color $tr;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba($c-black, .24);
+        opacity: 0;
+        content: '';
+        transition: opacity $tr;
+    }
+
+    &:hover {
+        &:before {
+            opacity: 1;
+        }
+    }
+
+    &--small {
+        padding: 13px 16px 12px;
+        font-size: 1.4rem;
+    }
+
+    &__text {
+        position: relative;
+    }
+}

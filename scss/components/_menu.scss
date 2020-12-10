@@ -1,0 +1,14 @@
+.menu {
+    display: flex;
+
+    &__item {
+        margin-right: 24px;
+    }
+
+    &__link {
+        color: $c-dark;
+        font-size: 1.4rem;
+        font-weight: 700;
+        text-decoration: none;
+    }
+}
