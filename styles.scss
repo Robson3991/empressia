@@ -2,6 +2,7 @@
 @import './scss/helpers/fonts';
 @import './scss/helpers/variables';
 @import './scss/helpers/mixins';
+@import './scss/helpers/animations';
 
 // ICOMOON
 @import './src/icomoon/icomoon';
@@ -14,6 +15,9 @@
 // LAYOUT
 @import './scss/layout/wrapper';
 @import './scss/layout/header';
+
+// SECTIONS
+@import './scss/sections/banner';
 
 // COMPONENTS
 @import './scss/components/menu';

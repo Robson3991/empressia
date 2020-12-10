@@ -1,0 +1,15 @@
+.heading {
+    font-family: $f-headers;
+    color: $c-dark;
+
+    &--h1 {
+        font-size: 5.6rem;
+        line-height: (64 / 56);
+    }
+}
+
+.paragraph {
+    color: $c-tertiary;
+    font-size: 1.6rem;
+    line-height: (28 / 16);
+}

@@ -1,0 +1,42 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 101px;
+
+    &__content {
+        max-width: 500px;
+    }
+
+    &__heading {
+        margin-bottom: 16px;
+    }
+
+    &__buttons {
+        display: flex;
+        align-items: center;
+        margin-top: 56px;
+    }
+
+    &__button {
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+    }
+
+    &__imageWrapper {
+        position: relative;
+    }
+
+    &__image {
+        box-shadow: 24px 32px 56px 0 rgba(39, 33, 99, .12);
+
+        &--small {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            transform: translate(30px, 37px);
+            animation: shake 2s linear infinite;
+        }
+    }
+}
