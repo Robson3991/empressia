@@ -1,11 +1,11 @@
+// ICOMOON
+@import './src/icomoon/icomoon';
+
 // HELPERS
 @import './scss/helpers/fonts';
 @import './scss/helpers/variables';
 @import './scss/helpers/mixins';
 @import './scss/helpers/animations';
-
-// ICOMOON
-@import './src/icomoon/icomoon';
 
 // BASE
 @import './scss/base/reset';
@@ -19,7 +19,10 @@
 // SECTIONS
 @import './scss/sections/banner';
 @import './scss/sections/intro';
+@import './scss/sections/faq';
 
 // COMPONENTS
 @import './scss/components/menu';
 @import './scss/components/button';
+@import './scss/components/divider';
+@import './scss/components/collapse';

@@ -1,7 +1,6 @@
 .button { $p: &;
     position: relative;
-    display: flex;
-    align-items: stretch;
+    display: inline-block;
     padding: 0;
     background: $c-primary;
     border: 0;
@@ -35,6 +34,11 @@
 
     &--small {
         font-size: 1.4rem;
+    }
+
+    &--icon {
+        display: flex;
+        align-items: stretch;
     }
 
     &--ghost {

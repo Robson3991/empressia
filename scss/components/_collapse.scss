@@ -1,0 +1,64 @@
+.collapse { $p: &;
+    padding: 32px 52px 32px 32px;
+    background: $c-primary;
+    border-radius: $radius;
+    cursor: pointer;
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    &--active {
+        background: $c-white;
+        box-shadow: 24px 32px 56px 0 rgba(39, 33, 99, .12);
+    }
+    
+    &__title {
+        position: relative;
+        font-size: 1.8rem;
+        color: $c-white;
+        font-weight: 700;
+        line-height: (28 / 18);
+        transition: color $tr;
+
+        #{$p}--active & {
+            color: $c-primary;
+
+            &:after {
+                transform: translateY(-50%) rotate(180deg);
+            }
+        }
+
+        &:after {
+            position: absolute;
+            top: 50%;
+            right: -16px;
+            font-family: $f-icomoon;
+            content: $icon-chevron-down;
+            font-size: 1.2rem;
+            transform: translateY(-50%);
+            transition: transform $tr;
+        }
+    }
+
+    &__content {
+        height: 0;
+
+        #{$p}--active & {
+            height: auto;
+        }
+    }
+
+    &__paragraph {
+        opacity: 0;
+        margin: 0;
+        font-size: 0;
+        transition: opacity $tr;
+        
+        #{$p}--active & {
+            margin-top: 16px;
+            opacity: 1;
+            font-size: 1.6rem;
+        }
+    }
+}

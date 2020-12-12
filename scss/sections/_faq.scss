@@ -1,0 +1,20 @@
+.faq {
+    padding: 132px 0 128px;
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__container {
+        width: 50%;
+    }
+
+    &__heading {
+        margin-bottom: 32px;
+    }
+
+    &__image {
+        margin-top: 23px;
+        transform: translateX(-166px);
+    }
+}
