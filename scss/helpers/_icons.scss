@@ -44,3 +44,9 @@
         content: $icon-diagnosis;
     }
 }
+
+.icon-check {
+    &:before {
+        content: $icon-check;
+    }
+}

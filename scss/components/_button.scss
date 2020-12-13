@@ -59,6 +59,11 @@
         }
     }
 
+    &--invert {
+        background: $c-white;
+        color: $c-primary;
+    }
+
     &__text {
         display: inline-block;
         position: relative;
