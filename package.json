@@ -13,5 +13,8 @@
   "devDependencies": {
     "cssnano": "^4.1.10",
     "sass": "^1.29.0"
+  },
+  "dependencies": {
+    "swiper": "^6.4.1"
   }
 }

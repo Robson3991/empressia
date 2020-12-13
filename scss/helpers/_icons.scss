@@ -1,0 +1,10 @@
+.icon {
+    position: relative;
+    font-family: $f-icomoon;
+}
+
+.icon-star-empty {
+    &:before {
+        content: $icon-star-empty;
+    }
+}

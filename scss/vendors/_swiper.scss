@@ -1,0 +1,17 @@
+.swiper {
+
+    &-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        opacity: .08;
+
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+    }
+
+    &-pagination-bullet-active {
+        opacity: 1;
+        background: $c-primary;
+    }
+}

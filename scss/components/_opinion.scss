@@ -1,0 +1,73 @@
+.opinion { $p: &;
+    border: 1px solid $c-border;
+    border-radius: $radius-big;
+    background: $c-white;
+    padding: 57px 48px 48px;
+    width: 100%;
+    max-width: 433px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__icon {
+        color: $c-secondary;
+        font-size: 2rem;
+    }
+
+    &__date {
+        color: rgba($c-dark, .32);
+        font-size: 1.4rem;
+    }
+
+    &__text {
+        margin-top: 23px;
+    }
+
+    &__author {
+        display: flex;
+        align-items: center;
+        margin-top: 53px;
+    }
+
+    &__avatar {
+        position: relative;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        overflow: hidden;
+        transition: transform $tr;
+
+        #{$p}:hover & {
+            transform: scale(.71) translateX(-10px);
+
+            &:before {
+                opacity: 0;
+            }
+        }
+
+        &:before {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $c-white;
+            background: $c-primary;
+            content: $icon-eye;
+            font-family: $f-icomoon;
+            z-index: 1;
+            transition: opacity $tr;;
+        }
+    }
+
+    &__authorName {
+        margin-left: 16px;
+        color: $c-dark;
+    }
+}

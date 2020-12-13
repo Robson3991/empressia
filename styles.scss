@@ -6,11 +6,15 @@
 @import './scss/helpers/variables';
 @import './scss/helpers/mixins';
 @import './scss/helpers/animations';
+@import './scss/helpers/icons';
 
 // BASE
 @import './scss/base/reset';
 @import './scss/base/global';
 @import './scss/base/typography';
+
+// VENDORS
+@import './scss/vendors/swiper';
 
 // LAYOUT
 @import './scss/layout/wrapper';
@@ -20,9 +24,11 @@
 @import './scss/sections/banner';
 @import './scss/sections/intro';
 @import './scss/sections/faq';
+@import './scss/sections/opinions';
 
 // COMPONENTS
 @import './scss/components/menu';
 @import './scss/components/button';
 @import './scss/components/divider';
 @import './scss/components/collapse';
+@import './scss/components/opinion';
