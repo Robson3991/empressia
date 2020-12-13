@@ -8,3 +8,39 @@
         content: $icon-star-empty;
     }
 }
+
+.icon-reservation {
+    &:before {
+        content: $icon-reservation;
+    }
+}
+
+.icon-e-receipt {
+    &:before {
+        content: $icon-e-receipt;
+    }
+}
+
+.icon-quickness {
+    &:before {
+        content: $icon-quickness;
+    }
+}
+
+.icon-video {
+    &:before {
+        content: $icon-video;
+    }
+}
+
+.icon-dicretia {
+    &:before {
+        content: $icon-dicretia;
+    }
+}
+
+.icon-diagnosis {
+    &:before {
+        content: $icon-diagnosis;
+    }
+}

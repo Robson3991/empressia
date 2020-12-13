@@ -1,0 +1,18 @@
+.seoIcons {
+    padding: 136px 0;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 136px 48px;
+
+        @include rwd($ipad) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include rwd($large-phone) {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 78px;
+        }
+    }
+}
